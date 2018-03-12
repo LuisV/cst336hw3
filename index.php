@@ -33,6 +33,7 @@ if(isset($_GET['tag']))
         <h1>Recipe Search</h1>
     </header>
     <body>
+        <main>
         <form>
         <input type="text" name="tag" placeholder = "Keyword" value="<?=$_GET['tag']?>"/>
         Number of recipes: 
@@ -56,7 +57,7 @@ if(isset($_GET['tag']))
         
         <?php
         if(empty($_GET)) { // form was not submitted
-        echo"<h2> Type a keyword to search for a recipe. <br/> </h2> Seperate multiple ingredients by commas, no spaces.";
+        echo"Type a keyword to search for a recipe. <br/> <h2> Seperate multiple ingredients by commas, no spaces.</h2>";
         } else { // form was submitted
         if(empty($tag))
         {
@@ -118,6 +119,12 @@ if(isset($_GET['tag']))
         }
         }
         ?>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </main>
+        
+        
+        <footer>
+            API used with permission from <a href="https://spoonacular.com/food-api"> https://spoonacular.com/food-api</a>
+            &copy Luis Valencia
+        </footer>
     </body>    
 </html>
