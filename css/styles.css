@@ -1,0 +1,23 @@
+body{
+    opacity:0.9;
+    width:100%;
+    text-align:center;
+    background-color: pink;
+    color: black;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+}
+
+label{
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.recipeInfo {
+    font-size: 35px;
+    
+}
+
